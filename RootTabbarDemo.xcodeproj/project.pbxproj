@@ -23,6 +23,10 @@
 		62EAF3FE1D88E52B00AA2F71 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF3FD1D88E52B00AA2F71 /* ThreeViewController.m */; };
 		62EAF4011D88E53600AA2F71 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF4001D88E53600AA2F71 /* FourViewController.m */; };
 		62EAF4041D88E54100AA2F71 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF4031D88E54100AA2F71 /* MyViewController.m */; };
+		62EAF4181D88FEA800AA2F71 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF40F1D88FEA800AA2F71 /* NSString+Size.m */; };
+		62EAF4191D88FEA800AA2F71 /* UITextView+AttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF4121D88FEA800AA2F71 /* UITextView+AttributedText.m */; };
+		62EAF41A1D88FEA800AA2F71 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF4151D88FEA800AA2F71 /* UIView+Extension.m */; };
+		62EAF41B1D88FEA800AA2F71 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAF4171D88FEA800AA2F71 /* UIView+ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,14 @@
 		62EAF4031D88E54100AA2F71 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		62EAF4071D88ECEC00AA2F71 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		62EAF4081D88ED5B00AA2F71 /* Project.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.pch; sourceTree = "<group>"; };
+		62EAF40E1D88FEA800AA2F71 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		62EAF40F1D88FEA800AA2F71 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		62EAF4111D88FEA800AA2F71 /* UITextView+AttributedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+AttributedText.h"; sourceTree = "<group>"; };
+		62EAF4121D88FEA800AA2F71 /* UITextView+AttributedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+AttributedText.m"; sourceTree = "<group>"; };
+		62EAF4141D88FEA800AA2F71 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		62EAF4151D88FEA800AA2F71 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		62EAF4161D88FEA800AA2F71 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		62EAF4171D88FEA800AA2F71 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		E6337529CA1528FAD3756ABA /* Pods-RootTabbarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RootTabbarDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RootTabbarDemo/Pods-RootTabbarDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +162,7 @@
 			children = (
 				62EAF3A21D88D69C00AA2F71 /* AppDelegate.h */,
 				62EAF3A31D88D69C00AA2F71 /* AppDelegate.m */,
+				62EAF4091D88FD2600AA2F71 /* 3rd */,
 				62EAF4061D88ECEC00AA2F71 /* Common */,
 				62EAF3D21D88DC6800AA2F71 /* Root */,
 				62EAF3D81D88DC7900AA2F71 /* Class */,
@@ -419,6 +432,69 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		62EAF4091D88FD2600AA2F71 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF40B1D88FD2600AA2F71 /* Tool */,
+				62EAF40A1D88FD2600AA2F71 /* lib */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		62EAF40A1D88FD2600AA2F71 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		62EAF40B1D88FD2600AA2F71 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF40C1D88FEA800AA2F71 /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		62EAF40C1D88FEA800AA2F71 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF40D1D88FEA800AA2F71 /* NSString */,
+				62EAF4101D88FEA800AA2F71 /* UITextView */,
+				62EAF4131D88FEA800AA2F71 /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		62EAF40D1D88FEA800AA2F71 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF40E1D88FEA800AA2F71 /* NSString+Size.h */,
+				62EAF40F1D88FEA800AA2F71 /* NSString+Size.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		62EAF4101D88FEA800AA2F71 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF4111D88FEA800AA2F71 /* UITextView+AttributedText.h */,
+				62EAF4121D88FEA800AA2F71 /* UITextView+AttributedText.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		62EAF4131D88FEA800AA2F71 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				62EAF4141D88FEA800AA2F71 /* UIView+Extension.h */,
+				62EAF4151D88FEA800AA2F71 /* UIView+Extension.m */,
+				62EAF4161D88FEA800AA2F71 /* UIView+ViewController.h */,
+				62EAF4171D88FEA800AA2F71 /* UIView+ViewController.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -600,9 +676,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EAF4191D88FEA800AA2F71 /* UITextView+AttributedText.m in Sources */,
+				62EAF41B1D88FEA800AA2F71 /* UIView+ViewController.m in Sources */,
 				62EAF3F21D88E38900AA2F71 /* BaseNavigationController.m in Sources */,
+				62EAF41A1D88FEA800AA2F71 /* UIView+Extension.m in Sources */,
 				62EAF3F51D88E3A500AA2F71 /* BaseViewController.m in Sources */,
 				62EAF3EF1D88E36400AA2F71 /* RootTabBarController.m in Sources */,
+				62EAF4181D88FEA800AA2F71 /* NSString+Size.m in Sources */,
 				62EAF4011D88E53600AA2F71 /* FourViewController.m in Sources */,
 				62EAF4041D88E54100AA2F71 /* MyViewController.m in Sources */,
 				62EAF3FB1D88E51F00AA2F71 /* SecondViewController.m in Sources */,
