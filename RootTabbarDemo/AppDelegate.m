@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    /**
+     *  Attention
+     *
+     *  check out `Podfile`
+     *  insure `target “DemoName” do` identify with your DemoName
+     *  
+     *  check out xcodeproj
+     *  
+     *  default no landscape left and right
+     *
+     *  default iOS 8.0 and later
+     *
+     *  default five tabbarItems
+     *
+     *  default no set Main Interface
+     *
+     *  check out `pch file`
+     *
+     *  default $(SRCROOT)/projectName/progject.pch
+     */
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
+    
+    RootTabBarController *rootTabBar = [[RootTabBarController alloc] init];
+    self.window.rootViewController = rootTabBar;
+    
+    self.window.backgroundColor = [UIColor cyanColor];
+    
+    
+    
     return YES;
 }
 
